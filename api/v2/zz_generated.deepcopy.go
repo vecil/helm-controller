@@ -306,7 +306,9 @@ func (in *HelmReleaseSpec) DeepCopyInto(out *HelmReleaseSpec) {
 	if in.DependsOn != nil {
 		in, out := &in.DependsOn, &out.DependsOn
 		*out = make([]DependencyReference, len(*in))
-		copy(*out, *in)
+		for i := range *in {
+			(*in)[i].DeepCopyInto(&(*out)[i])
+		}
 	}
 	if in.Timeout != nil {
 		in, out := &in.Timeout, &out.Timeout

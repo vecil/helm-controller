@@ -71,5 +71,7 @@ type CrossNamespaceSourceReference struct {
 	Namespace string `json:"namespace,omitempty"`
 }
 
-// DependencyReference defines a HelmRelease dependency on another HelmRelease resource.
+// DependencyReference contains enough information to locate the referenced Kubernetes resource object
+// with optional built-in or CEL expression readiness check.
+// When the dependency is a HelmRelease, defaults are applied during reconciliation.
 type DependencyReference = meta.DependencyReference

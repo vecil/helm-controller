@@ -4,6 +4,9 @@ go 1.26.0
 
 replace github.com/fluxcd/helm-controller/api => ./api
 
+// TODO: Remove this after merging the proposed DependencyReference type extensions.
+replace github.com/fluxcd/pkg/apis/meta => github.com/vecil/fluxcd-pkg/apis/meta v0.0.0-20260603231400-6d1005a835a4
+
 // TODO: Remove this after Helm 4.2 comes out.
 replace helm.sh/helm/v4 => github.com/fluxcd/helm/v4 v4.1.4-flux.3
 

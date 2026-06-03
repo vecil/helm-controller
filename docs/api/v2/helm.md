@@ -195,7 +195,7 @@ Defaults to the namespace of the HelmRelease.</p>
 <td>
 <em>(Optional)</em>
 <p>DependsOn may contain a DependencyReference slice with
-references to HelmRelease resources that must be ready before this HelmRelease
+references to Kubernetes resources that must be ready before this HelmRelease
 can be reconciled.</p>
 </td>
 </tr>
@@ -1320,7 +1320,7 @@ Defaults to the namespace of the HelmRelease.</p>
 <td>
 <em>(Optional)</em>
 <p>DependsOn may contain a DependencyReference slice with
-references to HelmRelease resources that must be ready before this HelmRelease
+references to Kubernetes resources that must be ready before this HelmRelease
 can be reconciled.</p>
 </td>
 </tr>
